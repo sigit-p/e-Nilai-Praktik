@@ -1,2 +1,6 @@
-# e-Nilai-Praktik
-Web Input Nilai Praktik UKK_Mupa
+# e-Nilai Praktik Mupa
+
+- Jurusan: TSM, TKR, RPL, PBS, ANI, DPIB
+- Tingkat: X dan XI
+- Kompeten >= 78
+- Keterangan opsional
