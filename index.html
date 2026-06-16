@@ -1,7 +1,90 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>e-Nilai Praktik Mupa</title></head>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Nilai Praktik Mupa</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    max-width:900px;
+    margin:20px auto;
+    padding:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
+
+.success{
+    color:green;
+}
+
+.error{
+    color:red;
+}
+</style>
+</head>
 <body>
+
 <h1>e-Nilai Praktik Mupa</h1>
 <p>SMK Muhammadiyah Pakem</p>
-<p>Login admin (password tunggal) dan fitur input nilai akan dihubungkan ke Google Sheets/App Script.</p>
-</body></html>
+
+<div id="loginBox" class="card">
+
+<h3>Login Admin</h3>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="loginMsg"></p>
+
+</div>
+
+<div id="menuBox" class="card hidden">
+
+<h3>Menu</h3>
+
+<p id="welcome"></p>
+
+<button onclick="showInput()">Input Nilai</button>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<div id="inputBox" class="card hidden">
+
+<h3>Input Nilai</h3>
+
+<p>Form input nilai akan kita sambungkan ke Apps Script pada tahap berikutnya.</p>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
